@@ -35,7 +35,7 @@ interests:
   - Biometrics and Computer Vision
 
 # Education to show in About widget
-education:
+updates:
   courses:
     - course: PhD in Artificial Intelligence
       institution: Stanford University
