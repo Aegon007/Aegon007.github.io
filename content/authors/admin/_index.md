@@ -3,7 +3,7 @@
 title: Chenggang Wang
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: # Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Chenggang
@@ -29,9 +29,10 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Network Security
+  - Machine Learning and Artificial Intelligence
+  - Blockchain
+  - Biometrics and Computer Vision
 
 # Education to show in About widget
 education:
@@ -119,6 +120,7 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
+Dr. Chenggang Wang serves as an assistant professor in the Department of Computer Science at Auburn University at Montgomery. He earned his Ph.D. in Computer Science and Engineering from the University of Cincinnati in 2022 (supervised by Prof. Boyang Wang). Before joining academia, Dr. Chenggang Wu brought a wealth of industry experience to his career. He contributed his expertise to renowned companies such as EMC, Nuance, and Amazon. 
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+As the founder and leader of the Network Security and Artificial Intelligence Lab at AUM, Dr. Wang directs research initiatives focused on critical areas, including data security and privacy, network security, side-channel attacks, and machine learning. His scholarly contributions extend to over 10 peer-reviewed papers published in prestigious conferences and journals. He is an member of IEEE and ACM.
 {style="text-align: justify;"}
