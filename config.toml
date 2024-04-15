@@ -1,0 +1,67 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Chenggang Wang Homepage'
+theme = 'recover'
+
+# Sample params from an AA group format
+
+[params]
+    name = "Chenggang Wang"
+    description = "A Hugo Theme enabling user to easily maintain a clean, readable academic home page."
+    selfImage = "/images/self.jpg"
+
+    position = "Assistant Professor"
+    affliation = "Department of Computer Science"
+    university = "Auburn University at Montgomery"
+    address = "Montgomery, Alabama, 36117"
+
+    office = "310R Goodwyn Hall"
+    phone = "+1.334.244.5639"
+    email = "cwang2@aum.edu"
+
+    cv = "https://www.linkedin.com/in/carlwang007/"
+    github = "https://github.com/users/Aegon007/projects/1"
+    google_scholar = "https://scholar.google.com/citations?user=nvAQ5LwAAAAJ&hl=en"
+
+    lab_name = "hello world"
+    lab_intro = "hello world"
+
+
+[menu]
+ [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+ [[menu.main]]
+    name = "Biography"
+    url = "/bio"
+    weight = 2
+ [[menu.main]]
+    name = "Research"
+    url = "/research"
+    weight = 3
+ [[menu.main]]
+    name = "Publication"
+    url = "/pubs"
+    weight = 4
+ [[menu.main]]
+    name = "Teaching"
+    url = "/teaching"
+    weight = 5
+ [[menu.main]]
+    name = "Services"
+    url = "/services"
+    weight = 6
+ [[menu.main]]
+    name = "Members"
+    url = "/members"
+    weight = 7
+    
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = ""
+    max = ""
+
+[Permalinks]
+    post = "/:filename/"

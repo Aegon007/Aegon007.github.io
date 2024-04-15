@@ -1,0 +1,17 @@
+name = "TechLab"
+license = "MIT"
+licenselink = "https://github.com/sefeng211/techlab-hugo-theme/blob/main/LICENSE"
+description = "A Simple Hugo Theme"
+min_version = "0.92.0"
+
+homepage = "https://github.com/sefeng211/techlab-hugo-theme"
+
+demosite = "https://techlab.seanfeng.dev/"
+
+tags = ["Blog", "Minimal", "Personal", "Light", "Clean", "Simple"]
+features = ["blog"]
+
+[author]
+    name = "Sean Feng"
+    homepage = "https://seanfeng.dev"
+

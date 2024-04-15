@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container col-xxl-10 px-4 py-5">
+
+    <div class="row">
+        <h2 class="display-3 fw-bold pt-5">
+            {{.Title}} {{ .Site.Params.lab_name }}
+        </h2>
+        <p class="fs-5 col-md-8">
+            {{ .Site.Params.lab_intro }}
+        </p>
+        <img class="col-md-4" src="{{.Site.Params.lab_image}}" alt="People of the Lab">
+        {{- partial "lab_page.html" .}}
+    </div>
+</div>
+{{ end }}

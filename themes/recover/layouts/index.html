@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="container col-xxl-10 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{.Site.Params.selfImage}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-3 fw-bold lh-1 mb-3">{{.Site.Params.name}}</h1>
+                <p class="fs-3 text-muted">
+                    {{.Site.Params.position}}<br>
+                    {{.Site.Params.affliation}}<br>
+                    {{.Site.Params.university}}<br>
+                    {{.Site.Params.address}}<br><br>
+                    {{.Site.Params.office}}<br>
+                    {{.Site.Params.phone}}<br>
+                    {{.Site.Params.email}}<br>
+                </p>
+                <br>
+                <p>
+                    <a href="{{.Site.Params.cv}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-video"></i> Curriculum Vitae </a>
+                    <a href="{{.Site.Params.github}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-video"></i> GitHub </a>
+                    <a href="{{.Site.Params.google_scholar}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-video"></i> Google Scholar Citations (Citations: 240+, h-index:5) </a>
+                </p>
+                <br>
+                <hr>
+        </div>
+        <article>
+            <div>
+                <p>
+                    {{ with .Site.GetPage "section" "research_interests"}}{{ .Content }}{{ end }}
+                </p>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div>
+                <p>
+                    {{ with .Site.GetPage "section" "news"}}{{ .Content }}{{ end }}
+                </p>
+            </div>
+        </article>
+        <br>
+        <article>
+            <div>
+                <p>
+                    {{ with .Site.GetPage "section" "selected_pubs"}}{{ .Content }}{{ end }}
+                </p>
+            </div>
+        </article>
+  </div>
+</div>
+
+
+{{ end }}
