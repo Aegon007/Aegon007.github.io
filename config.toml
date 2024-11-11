@@ -11,20 +11,20 @@ theme = 'recover'
     selfImage = "/images/self.jpg"
 
     position = "Assistant Professor"
-    affliation = "Department of Computer Science"
-    university = "Auburn University at Montgomery"
-    address = "Montgomery, Alabama, 36117"
+    affliation = "Polytechnic Institute"
+    university = "University of Oklahoma"
+    address = "Tulsa, Oklahoma, 74136"
 
-    office = "310R Goodwyn Hall"
+    office = "Tulsa campus main building"
     phone = "+1.334.244.5639"
-    email = "cwang2@aum.edu"
+    email = "chenggang.wang@ou.edu"
 
     cv = "https://www.linkedin.com/in/carlwang007/"
     github = "https://github.com/users/Aegon007/projects/1"
     google_scholar = "https://scholar.google.com/citations?user=nvAQ5LwAAAAJ&hl=en"
 
-    lab_name = "hello world"
-    lab_intro = "hello world"
+    lab_name = "Data Security and Machine Intelligence"
+    lab_intro = "Our lab is focused on next generation trustable and secure computing systems"
 
 
 [menu]
@@ -56,7 +56,7 @@ theme = 'recover'
     name = "Members"
     url = "/members"
     weight = 7
-    
+
 [module]
   [module.hugoVersion]
     extended = true
