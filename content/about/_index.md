@@ -1,5 +1,5 @@
 ---
-title: "Biography"
+title: "Data Security and Machine Intelligence Lab"
 date: 2021-10-29T14:05:32-04:00
 draft: false
 ---
@@ -10,7 +10,9 @@ draft: false
 Our lab is always looking for self-motivated master and undergraduate students with solid technical background and programming skills. We also welcome visiting scholars to come visit and colloborate with research projects.
 
 
-# RA Positions Available for Fall 2025
+&nbsp;
+&nbsp;
+## RA Positions Available for Fall 2025
 --------------------------------------------------------
 Our lab has one opening for one master/undergraduate student starting from Fall 2025. We are looking for candidates who have strong background and/or research experiences in one of the following areas:
 
@@ -25,7 +27,7 @@ If you are interested, please send your CV/resume, transcripts, and publications
 
 &nbsp;
 &nbsp;
-# Projects
+## Projects
 --------------------------------
 * Side-channel Attacks
 * Smart Agriculture via IoT devices
