@@ -6,4 +6,4 @@ draft: false
 
 ## Research Interests
 -----------------------------------------
-* Data privacy and security, network security, side-channel attacks, and machine learning
+* Data privacy and security, network security, side-channel attacks, natural language processing, and machine learning

@@ -37,7 +37,7 @@ theme = 'recover'
     url = "/bio"
     weight = 2
  [[menu.main]]
-    name = "Research"
+    name = "Research and Projects"
     url = "/research"
     weight = 3
  [[menu.main]]
