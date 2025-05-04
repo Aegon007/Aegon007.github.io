@@ -25,7 +25,7 @@ theme = 'recover'
 
     lab_name = "Data Security and Machine Intelligence Lab"
     lab_intro = "Our lab is focused on next generation trustable and secure computing systems"
-    lab_image = "/images/screenshot.png"
+    lab_image = "/images/cat.jpg"
 
 [menu]
  [[menu.main]]
