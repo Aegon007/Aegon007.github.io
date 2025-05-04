@@ -12,7 +12,6 @@ weight: 3
 &nbsp;
 &nbsp;
 ## Projects
--------------------------------------------------------------
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
 <div style="flex: 1 1 300px; max-width: 300px; border: 1px solid #ddd; padding: 10px;">
@@ -41,7 +40,6 @@ weight: 3
 &nbsp;
 &nbsp;
 ## Sponsors
--------------------------------------------------------------
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; margin-top: 20px;">
 
   <img src="/images/sponsor1.png" alt="Sponsor 1" style="height: 80px;">
