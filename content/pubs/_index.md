@@ -5,11 +5,12 @@ draft: false
 ---
 
 
+----------------------------------------
 Note: PDF copies of our research papers on this website should be used for education and research purpose only.
 
+
 &nbsp;
-
-
+&nbsp;
 ## Conference Papers
 ----------------------------------------
 1. Chenggang Wang, Mabon Ninan, Shane Reilly, Joel Ward, William Hawkins, Boyang Wang, John M. Emmert
@@ -34,22 +35,19 @@ IEEE Conference on Communication and Network Security (CNS 2019), 2019 (Acceptan
 
 
 &nbsp;
-
-
+&nbsp;
 ## Journal Papers
 ----------------------------------------
 
 
 &nbsp;
-
-
+&nbsp;
 ## Workshop Papers and Posters
 ----------------------------------------
 
 
 &nbsp;
-
-
+&nbsp;
 ## Patents
 ----------------------------------------
 
