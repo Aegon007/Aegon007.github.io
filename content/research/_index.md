@@ -1,9 +1,17 @@
 ---
-title: "Research"
+title: "Research and Projects"
 date: 2021-10-29T14:05:32-04:00
 draft: false
 ---
 
+# Projects
 ----------------------------------------
-under construction now
+
+
+# Sponsors
+----------------------------------------
+
+
+# Funding
+----------------------------------------
 
