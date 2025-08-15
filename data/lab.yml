@@ -9,7 +9,7 @@ pis:
   - name: "Dr. Chad Roller"
     title: "Assistant Professor"
     image: "/images/chad.jpg" # Add a picture for the second PI
-    bio: "Dr. Doe collaborates on projects related to applied cryptography and its applications in blockchain technology and secure multi-party computation."
+    bio: "Dr. Chad Roller leads the lab with a focus on AI applications and Translational Research. His research intends to build AI-based Intelligence system and accelerate the technology transfer and science of science research."
 
 # --- LAB THRUSTS ---
 thrusts:
