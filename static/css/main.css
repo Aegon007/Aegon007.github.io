@@ -66,4 +66,16 @@ h1,h2,h3,h4,h5,h6{
     height: auto;       /* Keeps proportions */
     margin-top: 15px; /* Adjust to your liking */
 }
-
+.pi-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+}
+.member-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image a perfect circle */
+    border: 3px solid #eee;
+}

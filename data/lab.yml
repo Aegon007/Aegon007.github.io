@@ -1,0 +1,42 @@
+# File location: /data/lab.yml
+
+# --- PRINCIPAL INVESTIGATORS ---
+pis:
+  - name: "Dr. Chenggang Wang"
+    title: "Assistant Professor"
+    image: "/images/self.jpg" # Make sure this image is in /static/images/
+    bio: "Dr. Wang leads the lab with a focus on data security, privacy-preserving machine learning, and trustworthy computing systems. His research aims to build the next generation of secure and intelligent infrastructure."
+  - name: "Dr. Chad Roller"
+    title: "Assistant Professor"
+    image: "/images/chad.jpg" # Add a picture for the second PI
+    bio: "Dr. Doe collaborates on projects related to applied cryptography and its applications in blockchain technology and secure multi-party computation."
+
+# --- CURRENT PROJECTS ---
+projects:
+  - title: "Trustworthy AI for Critical Infrastructure"
+    image: "/images/project_ai.jpg" # Create a relevant image for your project
+    description: "This project focuses on developing robust and explainable machine learning models to detect and mitigate cyber-attacks against power grids and water distribution systems. We are exploring novel federated learning techniques to ensure data privacy."
+  - title: "Scalable Blockchain for IoT Security"
+    image: "/images/project_iot.jpg"
+    description: "We are designing a lightweight, scalable blockchain framework to secure communications and data integrity for large-scale Internet of Things (IoT) networks, addressing challenges in consensus algorithms and resource-constrained devices."
+
+# --- CURRENT MEMBERS ---
+members:
+  - name: "Alice Johnson"
+    role: "PhD Candidate"
+    image: "/images/member1.jpg"
+  - name: "Bob Williams"
+    role: "PhD Student"
+    image: "/images/member2.jpg"
+  - name: "Charlie Brown"
+    role: "Postdoctoral Researcher"
+    image: "/images/member3.jpg"
+  - name: "Diana Prince"
+    role: "MS Student"
+    image: "/images/member4.jpg"
+  - name: "Eve Adams"
+    role: "MS Student"
+    image: "/images/member5.jpg"
+  - name: "Frank Miller"
+    role: "Research Assistant"
+    image: "/images/member6.jpg"
