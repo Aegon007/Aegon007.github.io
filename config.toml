@@ -37,7 +37,7 @@ title = 'Chenggang Wang Homepage'
     url = "/bio"
     weight = 2
  [[menu.main]]
-    name = "Research and Projects"
+    name = "Research"
     url = "/research"
     weight = 3
  [[menu.main]]
@@ -53,13 +53,9 @@ title = 'Chenggang Wang Homepage'
     url = "/services"
     weight = 6
  [[menu.main]]
-    name = "Members"
-    url = "/members"
-    weight = 7
- [[menu.main]]
-    name = "Lab"
+    name = "DSMI Lab"
     url = "/lab"
-    weight = 8
+    weight = 7
 
 [module]
   [module.hugoVersion]

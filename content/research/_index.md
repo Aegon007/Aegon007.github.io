@@ -1,8 +1,5 @@
 ---
-title: "Research and Projects"
-layout: "page"
-menu: "main"
-weight: 3
+title: "Research"
 ---
 
 # Research and Projects

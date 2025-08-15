@@ -18,14 +18,17 @@ thrusts:
       - "Developing robust and fair machine learning models."
       - "Ensuring AI systems are explainable and transparent."
       - "Focusing on critical applications in finance and healthcare."
-  - title: "AI Applications"
+  - title: "AI Applications and Translational Research"
     points:
-      - "Developing robust and fair machine learning models."
-      - "Ensuring AI systems are explainable and transparent."
-      - "Focusing on critical applications in finance and healthcare."
+      - "Developing AI-driven methods for knowledge discovery and pattern mining."
+      - "Developing AI-based system that help learning from historical data and finding insights for future."
+      - "Building scalable AI-based system that empower other displines."
 
 # --- CURRENT PROJECTS ---
 projects:
+  - title: "Catalyst OU: A Pilot for an LLM-Powered Researcher Collaboration Network"
+    image: "/images/catalystOU.png"
+    description: "This project will develop and evaluate \"Catalyst OU,\" a pilot system designed to foster research collaboration at the University of Oklahoma by leveraging Large Language Models (LLMs) to identify potential research synergies. This pilot aims to demonstrate the feasibility of using LLMs for sophisticated researcher profiling and research interest matching, which will lay the groundwork for a university-wide collaboration discovery platform."
   - title: "Trustworthy AI for Critical Infrastructure"
     image: "/images/project_ai.jpg" # Create a relevant image for your project
     description: "This project focuses on developing robust and explainable machine learning models to detect and mitigate cyber-attacks against power grids and water distribution systems. We are exploring novel federated learning techniques to ensure data privacy."
