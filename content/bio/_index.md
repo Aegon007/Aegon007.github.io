@@ -13,5 +13,6 @@ As the founder and leader of the Data Security and Machine Intelligence (DSMI) L
 &nbsp;
 # Honors and Awards
 --------------------------------
+* Best Reviewer Award, IEEE IRI'25, 2025
 * Distinguished Teaching Award, Department of Computer Science, Auburn University at Montgomery, 2024
 * Best Ph.D. Dissertation Award, University of Cincinnati, 2023

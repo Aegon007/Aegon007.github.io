@@ -5,6 +5,13 @@ title: "Research"
 # Research and Projects
 -------------------------------------------------------------
 
+&nbsp;
+&nbsp;
+## Funding
+-------------------------------------------------------------
+* OU AI Initiative, "Catalyst OU: A Pilot for an LLM-Powered Researcher Collaboration Network," PI: Chenggang Wang, Co-PI: Chad Roller, \$10,000, 2025/06/05 - 2025/12/31, Internal 
+* OU AI Initiative, "Establishing a High-Performance Local AI Development Platform: Empowering the University of Oklahoma with Secure and Efficient On-Premises LLM Capabilities," PI: Sungbo Jung, Co-PI: Chenggang Wang, \$10,000, 2025/06/05 - 2025/12/31, Internal
+
 
 &nbsp;
 &nbsp;
@@ -46,12 +53,4 @@ title: "Research"
 </div>
 
 ---
-
-
-&nbsp;
-&nbsp;
-## Funding
--------------------------------------------------------------
-
-
 
