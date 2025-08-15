@@ -60,3 +60,10 @@ h1,h2,h3,h4,h5,h6{
   text-decoration: underline;
   font-weight: 500;
 }
+.lab-logo {
+    max-width: 120px;   /* Prevents huge image */
+    /* width: auto; */
+    height: auto;       /* Keeps proportions */
+    margin-top: 15px; /* Adjust to your liking */
+}
+
