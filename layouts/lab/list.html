@@ -12,7 +12,7 @@
         </div>
         <div class="col">
             <h1 class="display-4 fw-bold">{{ .Site.Params.lab_name }}</h1>
-            <p class="lead text-muted">{{ .Site.Params.lab_intro }}</p>
+            {{/* <p class="lead text-muted">{{ .Site.Params.lab_intro }}</p> */}}
         </div>
     </div>
 
@@ -32,6 +32,26 @@
                     <p class="text-muted mb-1"><em>{{ .title }}</em></p>
                     <p>{{ .bio | markdownify }}</p>
                 </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+
+    <hr class="my-5">
+
+    {{/* --- Lab Thrust Section --- */}}
+    <section id="thrust" class="mb-5">
+        <h2 class="display-6 mb-4">Lab Thrust</h2>
+        <div class="row">
+            {{ range .Site.Data.lab.thrusts }}
+            <div class="col-lg-6 mb-4">
+                <h4 class="fw-bold">{{ .title }}</h4>
+                <ul>
+                    {{ range .points }}
+                    <li>{{ . | markdownify }}</li>
+                    {{ end }} {{/* <-- This was the missing line */}}
+                </ul>
             </div>
             {{ end }}
         </div>

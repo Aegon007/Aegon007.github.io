@@ -4,32 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    {{/* Link to your theme's main CSS or Bootstrap CSS */}}
-    {{ $style := resources.Get "css/style.css" | minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    {{/* Link to the custom lab CSS */}}
+
+    {{/* --- CSS LINKS (This is the part that was likely missing) --- */}}
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/lab.css">
 </head>
 <body>
 
-    {{/* --- CUSTOM LAB NAVIGATION BAR --- */}}
-    <header class="container py-3 border-bottom">
-        <div class="row text-center align-items-center">
-            {{/* Link 1: Returns to the site's homepage */}}
-            <div class="col-md-4">
-                <a href="{{ .Site.BaseURL }}" class="text-decoration-none text-dark fs-5 fw-bold">Chenggang Wang</a>
-            </div>
-
-            {{/* Link 2: Points to an external site for Chad Roller */}}
-            <div class="col-md-4">
-                {{/* IMPORTANT: Replace '#' with the actual URL */}}
-                <a href="#" class="text-decoration-none text-dark fs-5 fw-bold">Chad Roller</a>
-            </div>
-
-            {{/* Link 3: Points to an external site for OUPI */}}
-            <div class="col-md-4">
-                {{/* IMPORTANT: Replace '#' with the actual URL */}}
-                <a href="#" class="text-decoration-none text-dark fs-5 fw-bold">OUPI</a>
+    {{/* --- CUSTOM LAB NAVIGATION BAR (Dark Blue with White Text) --- */}}
+    <header class="py-3 lab-navbar">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-md-4">
+                    <a href="{{ .Site.BaseURL }}" class="text-decoration-none text-white fs-5 fw-bold">Chenggang Wang</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.ou.edu/polytechnic/about/faculty/chad-roller" class="text-decoration-none text-white fs-5 fw-bold">Chad Roller</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.ou.edu/polytechnic" class="text-decoration-none text-white fs-5 fw-bold">OUPI</a>
+                </div>
             </div>
         </div>
     </header>
@@ -38,8 +33,6 @@
         {{/* This is where the content from list.html will be injected */}}
         {{ block "main" . }}{{ end }}
     </main>
-
-    {{/* You can add a custom footer here if needed */}}
 
 </body>
 </html>

@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 500;
 }
 .lab-logo {
-    max-width: 120px;   /* Prevents huge image */
+    max-width: 160px;   /* Prevents huge image */
     /* width: auto; */
     height: auto;       /* Keeps proportions */
     margin-top: 15px; /* Adjust to your liking */
@@ -78,4 +78,10 @@ h1,h2,h3,h4,h5,h6{
     object-fit: cover;
     border-radius: 50%; /* Makes the image a perfect circle */
     border: 3px solid #eee;
+}
+.lab-navbar {
+  background-color: #002d56; /* A professional dark blue */
+}
+.lab-navbar a:hover {
+  opacity: 0.8;
 }

@@ -11,6 +11,19 @@ pis:
     image: "/images/chad.jpg" # Add a picture for the second PI
     bio: "Dr. Doe collaborates on projects related to applied cryptography and its applications in blockchain technology and secure multi-party computation."
 
+# --- LAB THRUSTS ---
+thrusts:
+  - title: "AI-Driven Cybersecurity"
+    points:
+      - "Developing robust and fair machine learning models."
+      - "Ensuring AI systems are explainable and transparent."
+      - "Focusing on critical applications in finance and healthcare."
+  - title: "AI Applications"
+    points:
+      - "Developing robust and fair machine learning models."
+      - "Ensuring AI systems are explainable and transparent."
+      - "Focusing on critical applications in finance and healthcare."
+
 # --- CURRENT PROJECTS ---
 projects:
   - title: "Trustworthy AI for Critical Infrastructure"
@@ -22,21 +35,12 @@ projects:
 
 # --- CURRENT MEMBERS ---
 members:
-  - name: "Alice Johnson"
-    role: "PhD Candidate"
-    image: "/images/member1.jpg"
-  - name: "Bob Williams"
-    role: "PhD Student"
-    image: "/images/member2.jpg"
-  - name: "Charlie Brown"
-    role: "Postdoctoral Researcher"
-    image: "/images/member3.jpg"
-  - name: "Diana Prince"
+  - name: "Colin Torbett"
     role: "MS Student"
-    image: "/images/member4.jpg"
-  - name: "Eve Adams"
+    image: "/images/colin.jpg"
+  - name: "Alexander Lee"
+    role: "Undergraduate Student"
+    image: "/images/alex_lee.jpg"
+  - name: "Ryan King"
     role: "MS Student"
-    image: "/images/member5.jpg"
-  - name: "Frank Miller"
-    role: "Research Assistant"
-    image: "/images/member6.jpg"
+    image: "/images/ryan.jpg"
