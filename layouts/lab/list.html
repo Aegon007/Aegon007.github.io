@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+  <div class="lab-container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+
+    <h2>Principal Investigators</h2>
+    <div class="pi-profiles">
+      <!-- Example PI info -->
+      <div class="pi">
+        <img src="/images/self.jpg" alt="PI Image" width="150"/>
+        <div class="pi-bio">
+          <h3>{{ .Site.Params.name }}</h3>
+          <p>{{ .Site.Params.position }} at {{ .Site.Params.affliation }}</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Current Projects</h2>
+    <!-- List projects here -->
+
+    <h2>Current Members</h2>
+    <!-- List members here -->
+  </div>
+
+{{ end }}
+

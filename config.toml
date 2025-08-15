@@ -1,7 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Chenggang Wang Homepage'
-theme = 'recover'
+#theme = 'recover'
 
 # Sample params from an AA group format
 
@@ -16,7 +16,7 @@ theme = 'recover'
     address = "Tulsa, Oklahoma, 74135"
 
     office = "Tulsa campus main building"
-    phone = "+1.334.244.5639"
+    phone = "+1.334.233.1036"
     email = "chenggang.wang@ou.edu"
 
     cv = "https://www.linkedin.com/in/carlwang007/"
@@ -56,6 +56,10 @@ theme = 'recover'
     name = "Members"
     url = "/members"
     weight = 7
+ [[menu.main]]
+    name = "Lab"
+    url = "/lab"
+    weight = 8
 
 [module]
   [module.hugoVersion]

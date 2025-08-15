@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+<!-- Lab Header -->
+<div class="container pt-4">
+    <div class="row align-items-center mb-5">
+        <div class="col-auto pe-3">
+            <img src="{{ .Site.Params.lab_image }}" alt="Lab Logo" class="lab-logo img-fluid">
+        </div>
+        <div class="col">
+            <h2 class="fw-bold mb-2">{{ .Title }}</h2>
+            <p class="text-muted mb-0">{{ .Params.intro }}</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- PIs Section -->
+<section id="pis" class="container mb-5">
+    <h3 class="mb-4">Principal Investigators</h3>
+    <div class="row">
+        {{ $pis := .Site.GetPage "lab/pis" }}
+        {{ range $pis.RegularPages }}
+        <div class="col-md-6 d-flex mb-4">
+            <img src="{{ .Params.image }}" alt="{{ .Params.name }}" class="pi-photo me-3">
+            <div>
+                <h5 class="fw-bold">{{ .Params.name }}</h5>
+                <p class="mb-1"><em>{{ .Params.title }}</em></p>
+                <p>{{ .Params.bio }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container mb-5">
+    <h3 class="mb-4">Current Projects</h3>
+    <div class="row">
+        {{ $projects := .Site.GetPage "lab/projects" }}
+        {{ range $projects.RegularPages }}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+                {{ if .Params.image }}<img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">{{ end }}
+                <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text">{{ .Params.description }}</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Members Section -->
+<section id="members" class="container mb-5">
+    <h3 class="mb-4">Current Members</h3>
+    <div class="row">
+        {{ $members := .Site.GetPage "lab/members" }}
+        {{ range $members.RegularPages }}
+        <div class="col-6 col-md-3 mb-4 text-center">
+            <img src="{{ .Params.image }}" alt="{{ .Params.name }}" class="member-photo mb-2 rounded-circle">
+            <h6 class="fw-bold mb-0">{{ .Params.name }}</h6>
+            <small class="text-muted">{{ .Params.role }}</small>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

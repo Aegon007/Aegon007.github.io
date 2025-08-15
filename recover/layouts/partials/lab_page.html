@@ -1,0 +1,8 @@
+<!-- ========================= GUIDELINES ========================= -->
+<section id="lab_page" class="container">
+    <hr class="">
+        <p class="lead">{{.Site.Params.lab_page}}</p>
+        <p>
+            {{ with .Site.GetPage "section" "about"}}{{ .Content }}{{ end }}
+        </p>
+</section>

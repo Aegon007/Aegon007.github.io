@@ -1,0 +1,69 @@
+/* #fad4d4 pale pink option*/
+/* C4DDEA light blue option*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body{
+    color: #555;
+}
+h1{
+    font-weight: 700;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Jost', sans-serif;
+}
+.btn-primary{
+    background-color: #C4DDEA;
+    border: #C4DDEA;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #555;
+}
+.btn-primary:hover{
+    background-color: #94cceb;
+    border: #94cceb;
+    color:#555;
+}
+.btn-primary:focus{
+    background-color: #C4DDEA;
+    border: #C4DDEA;
+    color:#555;
+}
+.bg-beagle{
+  background-color: #C4DDEA;
+}
+.nav-custom{
+    background-color: #C4DDEA;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+}
+.highlight{
+  text-decoration: underline;
+  font-weight: 500;
+}
+.lab-logo {
+    max-width: 120px;   /* Prevents huge image */
+    /* width: auto; */
+    height: auto;       /* Keeps proportions */
+    margin-top: 15px; /* Adjust to your liking */
+}
+
