@@ -21,7 +21,7 @@ draft: false
 
 &nbsp;
 &nbsp;
-## TPC
+## Conference TPC
 ----------------------------------------
 * IEEE International Conference on Information Reuse and Integration for Data Science (IEEE IRI), 2023 - 2025
 * International Conference on Computing, Networking and Communications (ICNC), 2025 

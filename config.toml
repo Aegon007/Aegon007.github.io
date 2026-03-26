@@ -53,7 +53,7 @@ title = 'Chenggang Wang Homepage'
     url = "/services"
     weight = 6
  [[menu.main]]
-    name = "DSMI Lab"
+    name = "Cipher Lab"
     url = "/lab"
     weight = 7
 
