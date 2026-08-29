@@ -6,10 +6,6 @@ pis:
     title: "Assistant Professor"
     image: "/images/self.jpg" # Make sure this image is in /static/images/
     bio: "Dr. Wang leads the lab with a focus on data security, privacy-preserving machine learning, and trustworthy computing systems. His research aims to build the next generation of secure and intelligent infrastructure."
-  - name: "Dr. Chad Roller"
-    title: "Assistant Professor"
-    image: "/images/chad.jpg" # Add a picture for the second PI
-    bio: "Dr. Chad Roller leads the lab with a focus on AI applications and Translational Research. His research intends to build AI-based Intelligence system and accelerate the technology transfer and science of science research."
 
 # --- LAB THRUSTS ---
 thrusts:
@@ -24,26 +20,30 @@ thrusts:
       - "Developing AI-based system that help learning from historical data and finding insights for future."
       - "Building scalable AI-based system that empower other displines."
 
+# --- FUNDING ---
+funding:
+  - "OU AI Initiative, \"Catalyst OU: A Pilot for an LLM-Powered Researcher Collaboration Network,\" PI: Chenggang Wang, Co-PI: Chad Roller, $10,000, 2025/06/05 - 2025/12/31, Internal"
+  - "OU AI Initiative, \"Establishing a High-Performance Local AI Development Platform: Empowering the University of Oklahoma with Secure and Efficient On-Premises LLM Capabilities,\" PI: Sungbo Jung, Co-PI: Chenggang Wang, $10,000, 2025/06/05 - 2025/12/31, Internal"
+
 # --- CURRENT PROJECTS ---
 projects:
   - title: "Catalyst OU: A Pilot for an LLM-Powered Researcher Collaboration Network"
     image: "/images/catalystOU.png"
     description: "This project will develop and evaluate \"Catalyst OU,\" a pilot system designed to foster research collaboration at the University of Oklahoma by leveraging Large Language Models (LLMs) to identify potential research synergies. This pilot aims to demonstrate the feasibility of using LLMs for sophisticated researcher profiling and research interest matching, which will lay the groundwork for a university-wide collaboration discovery platform."
-  - title: "Trustworthy AI for Critical Infrastructure"
-    image: "/images/project_ai.jpg" # Create a relevant image for your project
-    description: "This project focuses on developing robust and explainable machine learning models to detect and mitigate cyber-attacks against power grids and water distribution systems. We are exploring novel federated learning techniques to ensure data privacy."
   - title: "Scalable Blockchain for IoT Security"
-    image: "/images/project_iot.jpg"
     description: "We are designing a lightweight, scalable blockchain framework to secure communications and data integrity for large-scale Internet of Things (IoT) networks, addressing challenges in consensus algorithms and resource-constrained devices."
+  - title: "Side-Channel Attacks"
+    description: "We study how information can leak through timing, power, electromagnetic, and other physical or implementation-level signals, and develop practical defenses for secure computing systems."
+  - title: "Network Traffic Analysis"
+    description: "We analyze encrypted and large-scale network traffic to understand privacy leakage, identify suspicious behaviors, and improve resilient communication systems."
 
 # --- CURRENT MEMBERS ---
 members:
   - name: "Colin Torbett"
     role: "MS Student"
-    image: "/images/colin.jpg"
+
+# --- ALUMNI ---
+alumni:
   - name: "Alexander Lee"
+    note: "Now pursuing a master's degree at OUPI."
     role: "Undergraduate Student"
-    image: "/images/alex_lee.jpg"
-  - name: "Ryan King"
-    role: "MS Student"
-    image: "/images/ryan.jpg"

@@ -1,0 +1,44 @@
+{{ $items := .Site.Data.publications.items }}
+{{ if .SelectedOnly }}{{ $items = where $items "selected" true }}{{ end }}
+{{ $showSections := .ShowSections }}
+
+{{ with .Heading }}
+<div class="section-heading">
+  <div>
+    {{ with $.Kicker }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2 id="{{ . | urlize }}">{{ . }}</h2>
+  </div>
+  {{ if $.ViewAll }}<a class="text-link" href="/pubs/">View all publications <span aria-hidden="true">&rarr;</span></a>{{ end }}
+</div>
+{{ end }}
+
+{{ if $showSections }}
+  {{ range .Site.Data.publications.sections }}
+    {{ $sectionItems := where $items "section" .key }}
+    {{ if $sectionItems }}
+    <section class="publication-group">
+      <header>
+        <h2>{{ .title }}</h2>
+        <span>{{ len $sectionItems }}</span>
+      </header>
+      <ol class="publication-list">
+        {{ range $sectionItems }}
+        <li>
+          <span class="publication-year">{{ .year }}</span>
+          <div>{{ .citation | markdownify }}</div>
+        </li>
+        {{ end }}
+      </ol>
+    </section>
+    {{ end }}
+  {{ end }}
+{{ else }}
+  <ol class="publication-list publication-list-selected">
+    {{ range $items }}
+    <li>
+      <span class="publication-year">{{ .year }}</span>
+      <div>{{ .citation | markdownify }}</div>
+    </li>
+    {{ end }}
+  </ol>
+{{ end }}

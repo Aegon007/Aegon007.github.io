@@ -1,54 +1,52 @@
 {{ define "main" }}
-<div class="container col-xxl-10 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="{{.Site.Params.selfImage}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-            <h1 class="display-3 fw-bold lh-1 mb-3">{{.Site.Params.name}}</h1>
-                <p class="fs-3 text-muted">
-                    {{.Site.Params.position}}<br>
-                    {{.Site.Params.affliation}}<br>
-                    {{.Site.Params.university}}<br>
-                    {{.Site.Params.address}}<br><br>
-                    {{.Site.Params.office}}<br>
-                    {{.Site.Params.phone}}<br>
-                    {{.Site.Params.email}}<br>
-                </p>
-                <br>
-                <p>
-                    <a href="{{.Site.Params.cv}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-file-pdf"></i> Curriculum Vitae </a>
-                    <a href="{{.Site.Params.github}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fab fa-github"></i> GitHub </a>
-                    <a href="{{.Site.Params.google_scholar}}" rel="noopener" target="_blank" class="btn btn-outline-secondary mb-1"><i class="fas fa-university"></i> Google Scholar Citations (Citations: 270+, h-index:6) </a>
-                </p>
-                <br>
-                <hr>
-        </div>
-        <article>
-            <div>
-                <p>
-                    {{ with .Site.GetPage "section" "research_interests"}}{{ .Content }}{{ end }}
-                </p>
-            </div>
-        </article>
-        <br>
-        <article>
-            <div>
-                <p>
-                    {{ with .Site.GetPage "section" "news"}}{{ .Content }}{{ end }}
-                </p>
-            </div>
-        </article>
-        <br>
-        <article>
-            <div>
-                <p>
-                    {{ with .Site.GetPage "section" "selected_pubs"}}{{ .Content }}{{ end }}
-                </p>
-            </div>
-        </article>
-  </div>
-</div>
+<main class="home-page">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="eyebrow">Assistant Professor &middot; Cybersecurity Researcher</p>
+      <h1 class="profile-name">{{ .Site.Params.name }}</h1>
+      <p class="home-hero-lead">I study secure and accountable computing systems at the intersection of data security, privacy, networks, and machine learning.</p>
+      <div class="home-affiliation">
+        <span>{{ .Site.Params.affliation }}</span>
+        <span>{{ .Site.Params.university }}</span>
+        <span>{{ .Site.Params.address }}</span>
+      </div>
+      <div class="profile-actions">
+        <a href="mailto:{{ .Site.Params.email }}" class="profile-action profile-action-primary"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+        <a href="{{ .Site.Params.cv }}" rel="noopener" target="_blank" class="profile-action"><i class="fas fa-file-alt" aria-hidden="true"></i> Curriculum Vitae</a>
+        <a href="{{ .Site.Params.github }}" rel="noopener" target="_blank" class="profile-action"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+      {{ $scholar := .Site.Data.scholar }}
+      <a href="{{ .Site.Params.google_scholar }}" rel="noopener" target="_blank" class="scholar-summary">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        <span>Google Scholar</span>
+        {{ with $scholar }}<strong>{{ .citations }} citations &middot; h-index {{ .h_index }}</strong>{{ end }}
+      </a>
+    </div>
+    <figure class="home-portrait">
+      <img src="{{ .Site.Params.selfImage }}" alt="Portrait of {{ .Site.Params.name }}" width="600" height="800">
+      <figcaption>
+        <span>{{ .Site.Params.position }}</span>
+        <span>{{ .Site.Params.university }}</span>
+      </figcaption>
+    </figure>
+  </section>
 
+  <section class="home-section research-focus">
+    <div class="section-intro">
+      <p class="eyebrow">Research</p>
+      <h2>Areas of focus</h2>
+    </div>
+    <div class="research-focus-content">
+      {{ with .Site.GetPage "section" "research_interests" }}{{ .Content }}{{ end }}
+    </div>
+  </section>
 
+  <section class="home-section">
+    {{ partial "news_list.html" (dict "Site" .Site "Limit" 5 "Heading" "Recent News" "Kicker" "Updates" "ViewAll" true) }}
+  </section>
+
+  <section class="home-section">
+    {{ partial "publications_list.html" (dict "Site" .Site "SelectedOnly" true "Heading" "Selected Publications" "Kicker" "Research output" "ViewAll" true) }}
+  </section>
+</main>
 {{ end }}

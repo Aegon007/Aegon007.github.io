@@ -45,6 +45,11 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+      - name: Update Scholar stats
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python3 scripts/update_scholar_stats.py
+        continue-on-error: true
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production

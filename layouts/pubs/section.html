@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="page-shell publications-page">
+  <header class="page-hero">
+    <p class="eyebrow">Research output</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="publication-note">{{ .Content }}</div>
+  {{ partial "publications_list.html" (dict "Site" .Site "ShowSections" true) }}
+</main>
+{{ end }}

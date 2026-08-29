@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main class="page-shell">
   <header class="page-hero">
-    {{ with .Params.kicker }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <p class="eyebrow">Updates</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
-  <article class="prose content-page">{{ .Content }}</article>
+  {{ partial "news_list.html" (dict "Site" .Site "Heading" "All News" "Kicker" "Archive") }}
 </main>
 {{ end }}

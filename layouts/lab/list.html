@@ -1,92 +1,127 @@
 {{ define "main" }}
 
-{{/* Link to custom CSS for this page */}}
-<link rel="stylesheet" href="/css/lab.css">
-
-<div class="container py-5">
+<div class="container lab-page py-5">
 
     {{/* --- Lab Header --- */}}
-    <div class="row align-items-center mb-5 pb-4 border-bottom">
-        <div class="col-auto">
-            <img src="{{ .Site.Params.lab_image }}" alt="Lab Logo" class="lab-logo">
+    <section class="lab-hero">
+        <div class="lab-hero-copy">
+            <div class="lab-brand">
+                <span class="lab-brand-mark" aria-hidden="true">CL</span>
+                <span class="lab-brand-name">{{ .Site.Params.lab_name }}</span>
+            </div>
+            <h1>{{ .Site.Params.lab_name }}</h1>
+            <p>{{ .Site.Params.lab_intro }}</p>
         </div>
-        <div class="col">
-            <h1 class="display-4 fw-bold">{{ .Site.Params.lab_name }}</h1>
-            {{/* <p class="lead text-muted">{{ .Site.Params.lab_intro }}</p> */}}
+        <div class="lab-hero-focus" aria-label="Lab focus areas">
+            <span>Security</span>
+            <span>Privacy</span>
+            <span>Trustworthy AI</span>
         </div>
-    </div>
+    </section>
 
     {{/* --- Principal Investigators Section --- */}}
-    <section id="pis" class="mb-5">
-        <h2 class="display-6 mb-4">Principal Investigators</h2>
-        <div class="row">
+    <section id="pis" class="lab-section">
+        <div class="lab-section-heading">
+            <span>People</span>
+            <h2>Principal Investigator</h2>
+        </div>
+        <div class="lab-pi-grid">
             {{ range .Site.Data.lab.pis }}
-            {{/* Each PI gets a column that takes up half the width on large screens */}}
-            <div class="col-lg-6 mb-4">
-                {{/* Unage is now on top */}}
-                <img src="{{ .image }}" alt="{{ .name }}" class="pi-photo mb-3">
-
-                {{/* Bio is below the image */}}
-                <div>
-                    <h4 class="fw-bold">{{ .name }}</h4>
-                    <p class="text-muted mb-1"><em>{{ .title }}</em></p>
-                    <p>{{ .bio | markdownify }}</p>
+            <article class="lab-pi-profile">
+                <img src="{{ .image }}" alt="{{ .name }}" class="pi-photo">
+                <div class="lab-pi-copy">
+                    <h3>{{ .name }}</h3>
+                    <p class="lab-role">{{ .title }}</p>
+                    <div class="lab-bio">{{ .bio | markdownify }}</div>
                 </div>
-            </div>
+            </article>
             {{ end }}
         </div>
     </section>
 
-
-    <hr class="my-5">
-
     {{/* --- Lab Thrust Section --- */}}
-    <section id="thrust" class="mb-5">
-        <h2 class="display-6 mb-4">Lab Thrust</h2>
-        <div class="row">
+    <section id="thrust" class="lab-section">
+        <div class="lab-section-heading">
+            <span>Direction</span>
+            <h2>Lab Thrust</h2>
+        </div>
+        <div class="lab-card-grid">
             {{ range .Site.Data.lab.thrusts }}
-            <div class="col-lg-6 mb-4">
-                <h4 class="fw-bold">{{ .title }}</h4>
+            <article class="lab-text-card">
+                <h3>{{ .title }}</h3>
                 <ul>
                     {{ range .points }}
                     <li>{{ . | markdownify }}</li>
-                    {{ end }} {{/* <-- This was the missing line */}}
+                    {{ end }}
                 </ul>
-            </div>
+            </article>
             {{ end }}
         </div>
     </section>
 
-    <hr class="my-5">
-
-    {{/* --- Current Projects Section --- */}}
-    <section id="projects" class="mb-5">
-        <h2 class="display-6 mb-5">Current Projects</h2>
-        {{ range .Site.Data.lab.projects }}
-        <div class="row align-items-center mb-5">
-            <div class="col-md-4">
-                <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-sm">
-            </div>
-            <div class="col-md-8">
-                <h4 class="fw-bold">{{ .title }}</h4>
-                <p>{{ .description | markdownify }}</p>
-            </div>
+    {{/* --- Funding Section --- */}}
+    <section id="funding" class="lab-section">
+        <div class="lab-section-heading">
+            <span>Support</span>
+            <h2>Funding</h2>
         </div>
-        {{ end }}
+        <ul class="lab-funding-list">
+            {{ range .Site.Data.lab.funding }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+        </ul>
     </section>
 
-    <hr class="my-5">
+    {{/* --- Current Projects Section --- */}}
+    <section id="projects" class="lab-section">
+        <div class="lab-section-heading">
+            <span>Work</span>
+            <h2>Current Projects</h2>
+        </div>
+        <div class="lab-project-list">
+        {{ range .Site.Data.lab.projects }}
+        <article class="lab-project{{ if not .image }} lab-project-no-image{{ end }}">
+            {{ if .image }}
+            <img src="{{ .image }}" alt="{{ .title }}">
+            {{ end }}
+            <div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description | markdownify }}</p>
+            </div>
+        </article>
+        {{ end }}
+        </div>
+    </section>
 
     {{/* --- Current Members Section --- */}}
-    <section id="members">
-        <h2 class="display-6 mb-5">Current Members</h2>
-        <div class="row">
+    <section id="members" class="lab-section">
+        <div class="lab-section-heading">
+            <span>Team</span>
+            <h2>Current Members</h2>
+        </div>
+        <div class="lab-person-grid">
             {{ range .Site.Data.lab.members }}
-            <div class="col-md-4 mb-4 text-center">
-                <img src="{{ .image }}" alt="{{ .name }}" class="member-photo mb-2">
-                <h5 class="fw-bold mb-0">{{ .name }}</h5>
-                <p class="text-muted">{{ .role }}</p>
-            </div>
+            <article class="lab-person">
+                <h3>{{ .name }}</h3>
+                <p>{{ .role }}</p>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+    {{/* --- Alumni Section --- */}}
+    <section id="alumni" class="lab-section">
+        <div class="lab-section-heading">
+            <span>Former Members</span>
+            <h2>Alumni</h2>
+        </div>
+        <div class="lab-person-grid">
+            {{ range .Site.Data.lab.alumni }}
+            <article class="lab-person">
+                <h3>{{ .name }}</h3>
+                {{ with .note }}<p class="lab-person-note">{{ . }}</p>{{ end }}
+                <p class="lab-person-role">{{ .role }}</p>
+            </article>
             {{ end }}
         </div>
     </section>

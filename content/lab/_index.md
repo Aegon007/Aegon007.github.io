@@ -1,7 +1,9 @@
 ---
-title: "Data Security and Machine Intelligence Lab"
+title: "Cipher Lab"
 date: 2025-08-15T14:05:32-04:00
 draft: false
+aliases:
+  - /research/
 ---
 
 

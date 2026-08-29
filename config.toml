@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://aegon007.github.io/'
 languageCode = 'en-us'
 title = 'Chenggang Wang Homepage'
 #theme = 'recover'
@@ -7,7 +7,7 @@ title = 'Chenggang Wang Homepage'
 
 [params]
     name = "Chenggang Wang"
-    description = "A Hugo Theme enabling user to easily maintain a clean, readable academic home page."
+    description = "Chenggang Wang is an Assistant Professor at the University of Oklahoma researching data security, privacy, networks, and trustworthy computing."
     selfImage = "/images/self.jpg"
 
     position = "Assistant Professor"
@@ -15,17 +15,15 @@ title = 'Chenggang Wang Homepage'
     university = "University of Oklahoma"
     address = "Tulsa, Oklahoma, 74135"
 
-    office = "Tulsa campus main building"
-    phone = "+1.334.233.1036"
+    phone = "+1.918.660.3183"
     email = "chenggang.wang@ou.edu"
 
     cv = "https://www.linkedin.com/in/carlwang007/"
     github = "https://github.com/users/Aegon007/projects/1"
     google_scholar = "https://scholar.google.com/citations?user=nvAQ5LwAAAAJ&hl=en"
 
-    lab_name = "Data Security and Machine Intelligence Lab"
+    lab_name = "Cipher Lab"
     lab_intro = "Our lab is focused on next generation trustable and secure computing systems"
-    lab_image = "/images/lab_logo.png"
 
 [menu]
  [[menu.main]]
@@ -37,11 +35,7 @@ title = 'Chenggang Wang Homepage'
     url = "/bio"
     weight = 2
  [[menu.main]]
-    name = "Research"
-    url = "/research"
-    weight = 3
- [[menu.main]]
-    name = "Publication"
+    name = "Publications"
     url = "/pubs"
     weight = 4
  [[menu.main]]

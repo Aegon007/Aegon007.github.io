@@ -8,24 +8,16 @@
     {{/* --- CSS LINKS (This is the part that was likely missing) --- */}}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lab.css">
 </head>
 <body>
 
-    {{/* --- CUSTOM LAB NAVIGATION BAR (Dark Blue with White Text) --- */}}
-    <header class="py-3 lab-navbar">
+    {{/* --- CUSTOM LAB NAVIGATION BAR --- */}}
+    <header class="lab-navbar">
         <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col-md-4">
-                    <a href="{{ .Site.BaseURL }}" class="text-decoration-none text-white fs-5 fw-bold">Chenggang Wang</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://www.ou.edu/polytechnic/about/faculty/chad-roller" class="text-decoration-none text-white fs-5 fw-bold">Chad Roller</a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://www.ou.edu/polytechnic" class="text-decoration-none text-white fs-5 fw-bold">OUPI</a>
-                </div>
-            </div>
+            <nav class="lab-nav">
+                <a href="/" class="lab-nav-link">Chenggang Wang</a>
+                <a href="https://www.ou.edu/polytechnic" class="lab-nav-link">OUPI</a>
+            </nav>
         </div>
     </header>
 

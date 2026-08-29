@@ -1,18 +1,13 @@
-<nav class="navbar navbar-expand navbar-light nav-custom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">{{ .Site.Params.Meeting }}</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            {{range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="nav-link">
-                {{ $text := print .Name | safeHTML }}
-                {{ $text }}
-            </a>
-            {{ end }}
-        </div>
-      </div>
-    </div>
-  </nav>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-identity" href="/" aria-label="Chenggang Wang home">
+      <span class="site-identity-mark" aria-hidden="true">CW</span>
+      <span class="site-identity-name">Chenggang Wang</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="site-nav-link{{ if or (eq $.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $.RelPermalink .URL)) }} is-active{{ end }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
