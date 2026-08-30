@@ -5,17 +5,26 @@
     {{/* --- Lab Header --- */}}
     <section class="lab-hero">
         <div class="lab-hero-copy">
-            <div class="lab-brand">
-                <span class="lab-brand-mark" aria-hidden="true">CL</span>
-                <span class="lab-brand-name">{{ .Site.Params.lab_name }}</span>
+            <div class="lab-brand" aria-label="{{ .Site.Params.lab_name }}">
+                <span class="lab-brand-mark" aria-hidden="true">
+                    <span class="lab-mark-c">C</span>
+                    <span class="lab-mark-pixels">
+                        <i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                </span>
+                <span class="lab-brand-name">
+                    <span>Cipher</span>
+                    <strong>Lab</strong>
+                </span>
             </div>
-            <h1>{{ .Site.Params.lab_name }}</h1>
-            <p>{{ .Site.Params.lab_intro }}</p>
-        </div>
-        <div class="lab-hero-focus" aria-label="Lab focus areas">
-            <span>Security</span>
-            <span>Privacy</span>
-            <span>Trustworthy AI</span>
+            <h1 class="lab-full-name" aria-label="{{ .Site.Params.lab_full_name }}">
+                <span><strong>C</strong>yber</span>
+                <span><strong>I</strong>ntelligence</span> for
+                <span><strong>P</strong>rivacy</span>
+                <span><strong>H</strong>ardening</span> against
+                <span><strong>E</strong>merging</span>
+                <span><strong>R</strong>isks</span> Lab
+            </h1>
         </div>
     </section>
 
@@ -82,7 +91,7 @@
         {{ range .Site.Data.lab.projects }}
         <article class="lab-project{{ if not .image }} lab-project-no-image{{ end }}">
             {{ if .image }}
-            <img src="{{ .image }}" alt="{{ .title }}">
+            <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" decoding="async">
             {{ end }}
             <div>
                 <h3>{{ .title }}</h3>

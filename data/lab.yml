@@ -27,15 +27,18 @@ funding:
 
 # --- CURRENT PROJECTS ---
 projects:
+  - title: "Scalable Blockchain for IoT Security"
+    image: "/images/project-blockchain-iot.png"
+    description: "We are designing a lightweight, scalable blockchain framework to secure communications and data integrity for large-scale Internet of Things (IoT) networks, addressing challenges in consensus algorithms and resource-constrained devices."
+  - title: "Side-Channel Attacks"
+    image: "/images/project-side-channel.png"
+    description: "We study how information can leak through timing, power, electromagnetic, and other physical or implementation-level signals, and develop practical defenses for secure computing systems."
+  - title: "Network Traffic Analysis"
+    image: "/images/project-network-traffic.png"
+    description: "We analyze encrypted and large-scale network traffic to understand privacy leakage, identify suspicious behaviors, and improve resilient communication systems."
   - title: "Catalyst OU: A Pilot for an LLM-Powered Researcher Collaboration Network"
     image: "/images/catalystOU.png"
     description: "This project will develop and evaluate \"Catalyst OU,\" a pilot system designed to foster research collaboration at the University of Oklahoma by leveraging Large Language Models (LLMs) to identify potential research synergies. This pilot aims to demonstrate the feasibility of using LLMs for sophisticated researcher profiling and research interest matching, which will lay the groundwork for a university-wide collaboration discovery platform."
-  - title: "Scalable Blockchain for IoT Security"
-    description: "We are designing a lightweight, scalable blockchain framework to secure communications and data integrity for large-scale Internet of Things (IoT) networks, addressing challenges in consensus algorithms and resource-constrained devices."
-  - title: "Side-Channel Attacks"
-    description: "We study how information can leak through timing, power, electromagnetic, and other physical or implementation-level signals, and develop practical defenses for secure computing systems."
-  - title: "Network Traffic Analysis"
-    description: "We analyze encrypted and large-scale network traffic to understand privacy leakage, identify suspicious behaviors, and improve resilient communication systems."
 
 # --- CURRENT MEMBERS ---
 members:

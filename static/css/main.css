@@ -79,88 +79,92 @@ h1,h2,h3,h4,h5,h6{
         font-size: 2.25rem;
     }
 }
-.lab-navbar {
-    background-color: #002d56;
-}
-.lab-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 14px 0;
-}
-.lab-nav-link {
-    color: #fff;
-    font-family: 'Jost', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-.lab-nav-link:hover {
-    color: #fff;
-    opacity: 0.82;
-}
 .lab-page {
     max-width: 1120px;
 }
 .lab-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 32px;
-    align-items: end;
-    padding: 42px 0 34px;
+    padding: 52px 0 44px;
     border-bottom: 1px solid #d9e3ea;
 }
 .lab-brand {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 22px;
+    gap: 18px;
+    margin-bottom: 36px;
 }
 .lab-brand-mark {
-    display: inline-flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 18px;
     align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    padding: 12px;
+    border-radius: 8px;
     background-color: #002d56;
     color: #fff;
-    font-family: 'Jost', sans-serif;
-    font-size: 1.15rem;
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-weight: 700;
+    box-shadow: 0 10px 24px rgba(0, 45, 86, 0.16);
+}
+.lab-brand-mark::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    border-radius: 0 0 8px 8px;
+    background: #3da99b;
+    content: "";
+}
+.lab-mark-c {
+    font-size: 2.25rem;
+    line-height: 1;
+}
+.lab-mark-pixels {
+    display: grid;
+    grid-template-columns: repeat(2, 6px);
+    gap: 4px;
+}
+.lab-mark-pixels i {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+.lab-mark-pixels i:nth-child(1),
+.lab-mark-pixels i:nth-child(4),
+.lab-mark-pixels i:nth-child(6) {
+    border-color: #8bd1c8;
+    background: #8bd1c8;
 }
 .lab-brand-name {
-    color: #002d56;
-    font-family: 'Jost', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-}
-.lab-hero-copy h1 {
-    max-width: 720px;
-    margin-bottom: 14px;
+    display: grid;
+    gap: 4px;
     color: #24282e;
-    font-size: 3.35rem;
-    line-height: 1.03;
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 800;
+    line-height: 0.95;
 }
-.lab-hero-copy p {
-    max-width: 780px;
-    color: #5d6770;
-    font-size: 1.18rem;
-    line-height: 1.55;
+.lab-brand-name strong {
+    color: #18766d;
+    font-size: 1.05rem;
+    font-weight: 800;
 }
-.lab-hero-focus {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 10px;
-    max-width: 260px;
+.lab-hero-copy .lab-full-name {
+    max-width: 960px;
+    margin-bottom: 0;
+    color: #24282e;
+    font-size: 3rem;
+    line-height: 1.12;
 }
-.lab-hero-focus span {
-    padding: 7px 12px;
-    border: 1px solid #c5d6e2;
-    color: #33424f;
-    font-size: 0.92rem;
-    line-height: 1;
+.lab-full-name span {
+    white-space: nowrap;
+}
+.lab-full-name strong {
+    color: #18766d;
+    font-weight: 800;
 }
 .lab-section {
     display: grid;
@@ -292,17 +296,12 @@ h1,h2,h3,h4,h5,h6{
     border: 3px solid #eee;
 }
 @media (max-width: 991.98px) {
-    .lab-hero,
     .lab-section {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    .lab-hero-focus {
-        justify-content: flex-start;
-        max-width: none;
-    }
-    .lab-hero-copy h1 {
-        font-size: 2.8rem;
+    .lab-hero-copy .lab-full-name {
+        font-size: 2.45rem;
     }
 }
 @media (max-width: 767.98px) {
@@ -312,8 +311,8 @@ h1,h2,h3,h4,h5,h6{
     .lab-hero {
         padding-top: 28px;
     }
-    .lab-hero-copy h1 {
-        font-size: 2.35rem;
+    .lab-hero-copy .lab-full-name {
+        font-size: 2.15rem;
     }
     .lab-pi-profile,
     .lab-project,
@@ -327,15 +326,31 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 @media (max-width: 480px) {
-    .lab-nav {
-        flex-direction: column;
-        gap: 8px;
-    }
     .lab-brand {
         margin-bottom: 18px;
     }
-    .lab-hero-copy h1 {
-        font-size: 2rem;
+    .lab-brand-mark {
+        grid-template-columns: 1fr 14px;
+        width: 56px;
+        height: 56px;
+        padding: 9px;
+    }
+    .lab-mark-c {
+        font-size: 1.8rem;
+    }
+    .lab-mark-pixels {
+        grid-template-columns: repeat(2, 5px);
+        gap: 3px;
+    }
+    .lab-mark-pixels i {
+        width: 5px;
+        height: 5px;
+    }
+    .lab-brand-name {
+        font-size: 1.25rem;
+    }
+    .lab-hero-copy .lab-full-name {
+        font-size: 1.8rem;
     }
 }
 

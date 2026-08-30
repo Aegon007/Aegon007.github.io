@@ -1,30 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-
-    {{/* --- CSS LINKS (This is the part that was likely missing) --- */}}
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-
-    {{/* --- CUSTOM LAB NAVIGATION BAR --- */}}
-    <header class="lab-navbar">
-        <div class="container">
-            <nav class="lab-nav">
-                <a href="/" class="lab-nav-link">Chenggang Wang</a>
-                <a href="https://www.ou.edu/polytechnic" class="lab-nav-link">OUPI</a>
-            </nav>
-        </div>
-    </header>
+{{- partial "head.html" . -}}
+<body class="site-body">
+    {{- partial "header.html" . -}}
 
     <main>
-        {{/* This is where the content from list.html will be injected */}}
         {{ block "main" . }}{{ end }}
     </main>
-
 </body>
 </html>
