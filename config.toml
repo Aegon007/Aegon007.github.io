@@ -23,7 +23,7 @@ title = 'Chenggang Wang Homepage'
     google_scholar = "https://scholar.google.com/citations?user=nvAQ5LwAAAAJ&hl=en"
 
     lab_name = "Cipher Lab"
-    lab_full_name = "Cyber Intelligence for Privacy Hardening against Emerging Risks Lab"
+    lab_full_name = "Cyber Intelligence for Privacy Hardening against Emerging Risks"
 
 [menu]
  [[menu.main]]

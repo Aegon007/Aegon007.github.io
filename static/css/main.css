@@ -86,11 +86,17 @@ h1,h2,h3,h4,h5,h6{
     padding: 52px 0 44px;
     border-bottom: 1px solid #d9e3ea;
 }
+.lab-hero-copy {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 48px;
+    align-items: center;
+}
 .lab-brand {
     display: inline-flex;
     align-items: center;
     gap: 18px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
 }
 .lab-brand-mark {
     position: relative;
@@ -153,7 +159,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 800;
 }
 .lab-hero-copy .lab-full-name {
-    max-width: 960px;
+    max-width: none;
     margin-bottom: 0;
     color: #24282e;
     font-size: 3rem;
@@ -296,6 +302,10 @@ h1,h2,h3,h4,h5,h6{
     border: 3px solid #eee;
 }
 @media (max-width: 991.98px) {
+    .lab-hero-copy {
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 32px;
+    }
     .lab-section {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -310,6 +320,10 @@ h1,h2,h3,h4,h5,h6{
     }
     .lab-hero {
         padding-top: 28px;
+    }
+    .lab-hero-copy {
+        grid-template-columns: 1fr;
+        gap: 28px;
     }
     .lab-hero-copy .lab-full-name {
         font-size: 2.15rem;
@@ -327,7 +341,7 @@ h1,h2,h3,h4,h5,h6{
 }
 @media (max-width: 480px) {
     .lab-brand {
-        margin-bottom: 18px;
+        margin-bottom: 0;
     }
     .lab-brand-mark {
         grid-template-columns: 1fr 14px;
