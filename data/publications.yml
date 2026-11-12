@@ -1,51 +1,135 @@
 sections:
-  - key: "conference"
-    title: "Conference Papers"
-  - key: "journal"
-    title: "Journal Papers"
-  - key: "workshop"
-    title: "Workshop Papers and Posters"
-  - key: "patent"
-    title: "Patents"
-
+- key: conference
+  title: Conference Papers
+- key: journal
+  title: Journal Papers
+- key: workshop
+  title: Workshop Papers and Posters
+- key: patent
+  title: Patents
+- key: other
+  title: Other Publications
 items:
-  - section: "conference"
-    selected: false
-    year: 2025
-    citation: "Xiaoke Jia, Chad Roller, Chenggang Wang, \"LLM-Rank: An Unsupervised Keyword Extraction Method Using Local Large Language Models,\" IEEE 26th International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2025), San Jose, CA, USA, August 6-August 8, 2025."
-  - section: "conference"
-    selected: true
-    year: 2023
-    citation: "Chenggang Wang, Mabon Ninan, Shane Reilly, Joel Ward, William Hawkins, Boyang Wang, John M. Emmert, \"Portability of Deep-Learning Side-Channel Attacks against Software Discrepancies,\" ACM Conference on Security and Privacy in Wireless and Mobile Network (ACM WiSec 2023), Guildford, Surrey, United Kingdom, May 29-June 01, 2023."
-  - section: "conference"
-    selected: true
-    year: 2023
-    citation: "Chenggang Wang, Jimmy Dani, Shane Reilly, Austen Brownfield, Boyang Wang, John M. Emmert, \"TripletPower: Deep-Learning Side-Channel Attacks over Few Traces,\" IEEE International Symposium on Hardware Oriented Security and Trust (HOST 2023), San Jose, CA, USA, May 1-5, 2023."
-  - section: "conference"
-    selected: false
-    year: 2022
-    citation: "Li, Haipeng, Kaustubh Gupta, Chenggang Wang, Nirnimesh Ghose, and Boyang Wang, \"RadioNet: Robust deep-learning based radio fingerprinting,\" IEEE Conference on Communications and Network Security (IEEE CNS 2022), Austin, TX, USA, Oct 3-5, 2022."
-  - section: "conference"
-    selected: true
-    year: 2021
-    citation: "Chenggang Wang, Jimmy Dani, Xiang Li, Xiaodong Jia and Boyang Wang, \"Adaptive Fingerprinting: Website Fingerprinting over Few Encrypted Traffic,\" ACM Conference on Data and Application Security and Privacy (ACM CODASPY 2021), Virtual, April 26-28, 2021."
-  - section: "conference"
-    selected: true
-    year: 2020
-    citation: "Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Xuetao Wei, Wenhai Sun, Boyang Wang, \"Fingerprinting Encrypted Voice Traffic on Smart Speakers with Deep Learning,\" ACM Conference on Security and Privacy in Wireless and Mobile Network (ACM WiSec 2020), Virtual, July 8-10, 2020. (Acceptance rate: 27/104=26%) (The first two authors contribute equally in this paper)"
-  - section: "conference"
-    selected: true
-    year: 2019
-    citation: "Sean Kennedy, Haipeng Li, Chenggang Wang, Hao Liu, Boyang Wang and Wenhai Sun, \"I Can Hear Your Alexa: Voice Command Fingerprinting on Smart Home Speakers,\" IEEE Conference on Communication and Network Security (CNS 2019), 2019. (Acceptance rate: 32/115=28%) (The first three authors contribute equally in this paper)"
-  - section: "workshop"
-    selected: false
-    year: 2021
-    citation: "Li, Haipeng, Chenggang Wang, Nirnimesh Ghose, and Boyang Wang, \"Robust deep-learning-based radio fingerprinting with fine-tuning,\" ACM Conference on Security and Privacy in Wireless and Mobile Networks (ACM WiSec 2021), Abu Dhabi, UAE, June 28-July 2, 2021."
-  - section: "workshop"
-    selected: false
-    year: 2020
-    citation: "Fang, Siqin, Sean Kennedy, Chenggang Wang, Boyang Wang, Qingqi Pei, and Xuefeng Liu, \"Sparser: Secure nearest neighbor search with space-filling curves,\" IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Virtual, July 6-9, 2020."
-  - section: "workshop"
-    selected: false
-    year: 2020
-    citation: "Wang, Chenggang, Boyang Wang, and Xinxin Fan, \"EcoBoost: efficient bootstrapping for confidential transactions,\" IEEE International Conference on Blockchain and Cryptocurrency (IEEE ICBC 2020), Virtual, May 2-6, 2020."
+- section: conference
+  selected: false
+  year: '2026'
+  title: Cross-Cutting Security Analysis of LLM-Generated Code via Metamorphic Testing and Association Rule Mining
+  citation: Z Peng, C Wang, S Zhu, "Cross-Cutting Security Analysis of LLM-Generated Code via Metamorphic Testing and Association
+    Rule Mining", 2026 IEEE International Conference on Information Reuse and Integration for …, 2026.
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:Se3iqnhoufwC
+  scholar_citations: 0
+- section: conference
+  selected: false
+  year: '2026'
+  title: 'MobileTransfer: Cross-Dataset Transfer Evaluation for Mobile-Money Fraud Detection'
+  citation: 'X Jia, Z Peng, C Wang, "MobileTransfer: Cross-Dataset Transfer Evaluation for Mobile-Money Fraud Detection",
+    2026 IEEE International Conference on Information Reuse and Integration for …, 2026.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:roLk4NBRz8UC
+  scholar_citations: 0
+- section: conference
+  selected: false
+  year: 2025
+  title: 'LLM-Rank: An Unsupervised Keyword Extraction Method Using Local Large Language Models'
+  citation: 'Xiaoke Jia, Chad Roller, Chenggang Wang, "LLM-Rank: An Unsupervised Keyword Extraction Method Using Local Large
+    Language Models," IEEE 26th International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2025),
+    San Jose, CA, USA, August 6-August 8, 2025.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:LkGwnXOMwfcC
+  scholar_citations: 2
+- section: conference
+  selected: true
+  year: 2023
+  title: Portability of Deep-Learning Side-Channel Attacks against Software Discrepancies
+  citation: Chenggang Wang, Mabon Ninan, Shane Reilly, Joel Ward, William Hawkins, Boyang Wang, John M. Emmert, "Portability
+    of Deep-Learning Side-Channel Attacks against Software Discrepancies," ACM Conference on Security and Privacy in Wireless
+    and Mobile Network (ACM WiSec 2023), Guildford, Surrey, United Kingdom, May 29-June 01, 2023.
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:eQOLeE2rZwMC
+  scholar_citations: 12
+- section: conference
+  selected: true
+  year: 2023
+  title: 'TripletPower: Deep-Learning Side-Channel Attacks over Few Traces'
+  citation: 'Chenggang Wang, Jimmy Dani, Shane Reilly, Austen Brownfield, Boyang Wang, John M. Emmert, "TripletPower: Deep-Learning
+    Side-Channel Attacks over Few Traces," IEEE International Symposium on Hardware Oriented Security and Trust (HOST 2023),
+    San Jose, CA, USA, May 1-5, 2023.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:YsMSGLbcyi4C
+  scholar_citations: 21
+- section: conference
+  selected: false
+  year: 2022
+  title: 'RadioNet: Robust deep-learning based radio fingerprinting'
+  citation: 'Li, Haipeng, Kaustubh Gupta, Chenggang Wang, Nirnimesh Ghose, and Boyang Wang, "RadioNet: Robust deep-learning
+    based radio fingerprinting," IEEE Conference on Communications and Network Security (IEEE CNS 2022), Austin, TX, USA,
+    Oct 3-5, 2022.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:W7OEmFMy1HYC
+  scholar_citations: 64
+- section: other
+  selected: false
+  year: '2022'
+  title: Towards Robust Side-Channel Attacks With Machine Learning
+  citation: C Wang, "Towards Robust Side-Channel Attacks With Machine Learning", University of Cincinnati, 2022.
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:WF5omc3nYNoC
+  scholar_citations: 0
+- section: conference
+  selected: true
+  year: 2021
+  title: 'Adaptive Fingerprinting: Website Fingerprinting over Few Encrypted Traffic'
+  citation: 'Chenggang Wang, Jimmy Dani, Xiang Li, Xiaodong Jia and Boyang Wang, "Adaptive Fingerprinting: Website Fingerprinting
+    over Few Encrypted Traffic," ACM Conference on Data and Application Security and Privacy (ACM CODASPY 2021), Virtual,
+    April 26-28, 2021.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:zYLM7Y9cAGgC
+  scholar_citations: 62
+- section: workshop
+  selected: false
+  year: 2021
+  title: Robust deep-learning-based radio fingerprinting with fine-tuning
+  citation: Li, Haipeng, Chenggang Wang, Nirnimesh Ghose, and Boyang Wang, "Robust deep-learning-based radio fingerprinting
+    with fine-tuning," ACM Conference on Security and Privacy in Wireless and Mobile Networks (ACM WiSec 2021), Abu Dhabi,
+    UAE, June 28-July 2, 2021.
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:Tyk-4Ss8FVUC
+  scholar_citations: 7
+- section: workshop
+  selected: false
+  year: 2020
+  title: 'EcoBoost: efficient bootstrapping for confidential transactions'
+  citation: 'Wang, Chenggang, Boyang Wang, and Xinxin Fan, "EcoBoost: efficient bootstrapping for confidential transactions,"
+    IEEE International Conference on Blockchain and Cryptocurrency (IEEE ICBC 2020), Virtual, May 2-6, 2020.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:UeHWp8X0CEIC
+  scholar_citations: 4
+- section: conference
+  selected: true
+  year: 2020
+  title: Fingerprinting Encrypted Voice Traffic on Smart Speakers with Deep Learning
+  citation: 'Chenggang Wang, Sean Kennedy, Haipeng Li, King Hudson, Gowtham Atluri, Xuetao Wei, Wenhai Sun, Boyang Wang, "Fingerprinting
+    Encrypted Voice Traffic on Smart Speakers with Deep Learning," ACM Conference on Security and Privacy in Wireless and
+    Mobile Network (ACM WiSec 2020), Virtual, July 8-10, 2020. (Acceptance rate: 27/104=26%) (The first two authors contribute
+    equally in this paper)'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:IjCSPb-OGe4C
+  scholar_citations: 79
+- section: workshop
+  selected: false
+  year: 2020
+  title: 'Sparser: Secure nearest neighbor search with space-filling curves'
+  citation: 'Fang, Siqin, Sean Kennedy, Chenggang Wang, Boyang Wang, Qingqi Pei, and Xuefeng Liu, "Sparser: Secure nearest
+    neighbor search with space-filling curves," IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops (INFOCOM
+    WKSHPS), Virtual, July 6-9, 2020.'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:qjMakFHDy7sC
+  scholar_citations: 2
+- section: conference
+  selected: true
+  year: 2019
+  title: 'I Can Hear Your Alexa: Voice Command Fingerprinting on Smart Home Speakers'
+  citation: 'Sean Kennedy, Haipeng Li, Chenggang Wang, Hao Liu, Boyang Wang and Wenhai Sun, "I Can Hear Your Alexa: Voice
+    Command Fingerprinting on Smart Home Speakers," IEEE Conference on Communication and Network Security (CNS 2019), 2019.
+    (Acceptance rate: 32/115=28%) (The first three authors contribute equally in this paper)'
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:u-x6o8ySG0sC
+  scholar_citations: 96
+- section: conference
+  selected: false
+  year: '2015'
+  title: A DCNN based fingerprint liveness detection algorithm with voting strategy
+  citation: C Wang, K Li, Z Wu, Q Zhao, "A DCNN based fingerprint liveness detection algorithm with voting strategy", Chinese
+    Conference on Biometric Recognition, 241-249, 2015.
+  scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nvAQ5LwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=nvAQ5LwAAAAJ:ufrVoPGSRksC
+  scholar_citations: 73
+scholar_profile: https://scholar.google.com/citations?user=nvAQ5LwAAAAJ&hl=en
+updated: '2026-11-11'

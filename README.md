@@ -18,7 +18,7 @@
 | Cipher Lab 名称和全称 | `config.toml` |
 | Cipher Lab 研究方向、经费、项目、成员和 Alumni | `data/lab.yml` |
 | 图片 | `static/images/` |
-| Google Scholar 统计数据 | 自动更新，见下文 |
+| Google Scholar 统计数据和论文 | 自动更新，见下文 |
 | 全站样式 | `static/css/main.css` |
 
 ## 个人信息和首页
@@ -113,6 +113,7 @@ data/publications.yml
 - section: "conference"
   selected: true
   year: 2026
+  title: "Publication title"
   citation: "Complete publication citation."
 ```
 
@@ -120,6 +121,7 @@ data/publications.yml
 - `selected: true` 表示该论文同时显示在首页 Selected Publications
 - `selected: false` 表示该论文只显示在完整 Publications 页面
 - `year` 是论文年份
+- `title` 用于与 Google Scholar 自动匹配，请与 Scholar 页面上的标题保持一致
 - `citation` 是完整引用信息
 
 Publications 页面的说明文字位于：
@@ -128,7 +130,9 @@ Publications 页面的说明文字位于：
 content/pubs/_index.md
 ```
 
-`.github/workflows/import-publications.yml` 是一个旧的 BibTeX 导入工作流。它会生成 `content/publication/`，但当前网站的论文页面读取的是 `data/publications.yml`，因此目前不要依赖该工作流更新网站论文。
+Google Scholar 自动同步会保留这里手工维护的 `section`、`selected` 和 `citation`。Scholar 中新发现的论文会自动加入，默认设置为 `selected: false`，并根据 venue 尝试分类。自动加入后建议检查一次分类和 citation。
+
+`.github/workflows/import-publications.yml` 是一个旧的 BibTeX 导入工作流。它会生成 `content/publication/`，但当前网站的论文页面读取的是 `data/publications.yml`，因此不要依赖该工作流更新网站论文。
 
 ## Teaching
 
@@ -230,20 +234,59 @@ static/images/
 
 ## Google Scholar 自动更新
 
-Google Scholar 数据保存在：
+Google Scholar 统计数据保存在：
 
 ```text
 data/scholar.yml
 ```
 
-通常不需要手工修改。自动更新由以下文件负责：
+Google Scholar 论文仍然合并到唯一的论文数据文件：
+
+```text
+data/publications.yml
+```
+
+自动更新由以下文件负责：
 
 ```text
 scripts/update_scholar_stats.py
+scripts/update_scholar_publications.py
 .github/workflows/update-scholar-stats.yml
 ```
 
-GitHub Actions 每周运行一次，也可以在 GitHub 的 Actions 页面手动运行 `Update Google Scholar Stats`。
+GitHub Actions 每周运行一次，也可以在 GitHub 的 Actions 页面手动运行 `Update Google Scholar Data`。
+
+同步规则：
+
+- 通过论文标题匹配现有条目
+- 自动合并 Scholar 中的 `POSTER:` 等重复版本
+- 保留现有的完整 citation、论文分类和 `selected` 标记
+- 更新 Scholar URL 和引用次数
+- 新论文自动加入完整 Publications 页面
+- 新论文默认 `selected: false`，不会自动出现在首页
+- Scholar 抓取失败时脚本会退出，不会清空现有论文
+
+推荐在 GitHub 仓库中配置 `SERPAPI_KEY`：
+
+1. 打开 GitHub 仓库的 Settings。
+2. 进入 Secrets and variables > Actions。
+3. 新建名为 `SERPAPI_KEY` 的 Repository secret。
+4. 填入 SerpAPI key。
+
+如果没有配置 `SERPAPI_KEY`，脚本会尝试直接读取 Google Scholar 页面，但这种方式可能被 Google 限制，因此稳定性较低。
+
+本地测试论文同步：
+
+```bash
+python3 -m pip install PyYAML==6.0.2
+python3 scripts/update_scholar_publications.py --dry-run
+```
+
+确认结果后执行正式更新：
+
+```bash
+python3 scripts/update_scholar_publications.py
+```
 
 ## 页面结构和样式
 
