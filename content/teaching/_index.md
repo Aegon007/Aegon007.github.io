@@ -9,8 +9,10 @@ description: "Courses taught in cybersecurity, networking, programming, and comp
 ## University of Oklahoma
 
 * SDI 3203 Network Fundamentals, Spring 2025
-* CYBS 4133/5133 Hacking & Penetration Testing, Fall 2025
-* CYBS 4473/5473 Network Security, Fall 2025
+* CYBS 4133/5133 Hacking & Penetration Testing, Fall 2025/Fall 2026
+* CYBS 4473/5473 Network Security, Fall 2025/Fall 2026
+* CYBS 4583/5583 Machine Learning for Cybersecurity, Spring 2026
+* CYBS 3113 Operating System, Spring 2026
 
 ## Auburn University at Montgomery
 
