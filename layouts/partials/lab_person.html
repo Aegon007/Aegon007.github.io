@@ -1,0 +1,17 @@
+{{ $awards := .awards }}
+{{ if not $awards }}
+    {{ with .award }}{{ $awards = slice . }}{{ end }}
+{{ end }}
+<article class="lab-person">
+    <h3>{{ .name }}</h3>
+    {{ with .note }}<p class="lab-person-note">{{ . }}</p>{{ end }}
+    <p class="lab-person-role">{{ .role }}</p>
+    {{ with $awards }}
+    <div class="lab-person-honors">
+        <h4>Honors</h4>
+        <ul>
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</article>

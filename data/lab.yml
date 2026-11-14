@@ -44,11 +44,10 @@ projects:
 members:
   - name: "Cooper Gunnels"
     role: "MS Student"
-
-members:
   - name: "Ian Hoagland"
     role: "Undergraduate Student"
-    award: "UReCA fellowship, University of Okalahoma"
+    awards:
+      - "UReCA fellowship, University of Oklahoma"
 
 # --- ALUMNI ---
 alumni:

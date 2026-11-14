@@ -277,6 +277,7 @@ h1,h2,h3,h4,h5,h6{
 .lab-person {
     padding-left: 16px;
     border-left: 3px solid #d6e2ea;
+    overflow-wrap: anywhere;
 }
 .lab-person p {
     margin-top: 4px;
@@ -287,6 +288,30 @@ h1,h2,h3,h4,h5,h6{
 }
 .lab-person .lab-person-role {
     font-size: 0.92rem;
+}
+.lab-person-honors {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #e4eaee;
+}
+.lab-person-honors h4 {
+    margin-bottom: 4px;
+    color: #18766d;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+.lab-person-honors ul {
+    margin: 0;
+    padding-inline-start: 1.1em;
+    color: #3f4a53;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+.lab-person-honors li + li {
+    margin-top: 4px;
+}
+.lab-person-honors li::marker {
+    color: #18766d;
 }
 .pi-photo {
     width: 180px;

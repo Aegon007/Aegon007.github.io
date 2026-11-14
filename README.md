@@ -201,7 +201,11 @@ data/lab.yml
 ```yaml
 - name: "Student Name"
   role: "MS Student"
+  awards:
+    - "Award or fellowship name, awarding institution"
 ```
+
+所有在读学生放在同一个 `members:` 列表下。`members` 和 `alumni` 中的每位学生都可以填写可选的 `awards` 列表，每项荣誉占一行。已有的单项 `award` 字段也能显示。
 
 Alumni 可以额外添加当前去向：
 

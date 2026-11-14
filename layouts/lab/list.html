@@ -110,10 +110,7 @@
         </div>
         <div class="lab-person-grid">
             {{ range .Site.Data.lab.members }}
-            <article class="lab-person">
-                <h3>{{ .name }}</h3>
-                <p>{{ .role }}</p>
-            </article>
+            {{ partial "lab_person.html" . }}
             {{ end }}
         </div>
     </section>
@@ -126,11 +123,7 @@
         </div>
         <div class="lab-person-grid">
             {{ range .Site.Data.lab.alumni }}
-            <article class="lab-person">
-                <h3>{{ .name }}</h3>
-                {{ with .note }}<p class="lab-person-note">{{ . }}</p>{{ end }}
-                <p class="lab-person-role">{{ .role }}</p>
-            </article>
+            {{ partial "lab_person.html" . }}
             {{ end }}
         </div>
     </section>
