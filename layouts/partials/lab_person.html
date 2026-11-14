@@ -1,14 +1,19 @@
-{{ $awards := .awards }}
+{{ $person := .person }}
+{{ $awards := $person.awards }}
 {{ if not $awards }}
-    {{ with .award }}{{ $awards = slice . }}{{ end }}
+    {{ with $person.award }}{{ $awards = slice . }}{{ end }}
 {{ end }}
 <article class="lab-person">
-    <h3>{{ .name }}</h3>
-    {{ with .note }}<p class="lab-person-note">{{ . }}</p>{{ end }}
-    <p class="lab-person-role">{{ .role }}</p>
+    {{ if .grouped }}
+    <h4 class="lab-person-name">{{ $person.name }}</h4>
+    {{ else }}
+    <h3 class="lab-person-name">{{ $person.name }}</h3>
+    {{ end }}
+    {{ with $person.note }}<p class="lab-person-note">{{ . }}</p>{{ end }}
+    <p class="lab-person-role">{{ $person.role }}</p>
     {{ with $awards }}
     <div class="lab-person-honors">
-        <h4>Honors</h4>
+        <p class="lab-person-honors-label">Honors</p>
         <ul>
             {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>

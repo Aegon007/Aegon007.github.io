@@ -205,7 +205,9 @@ data/lab.yml
     - "Award or fellowship name, awarding institution"
 ```
 
-所有在读学生放在同一个 `members:` 列表下。`members` 和 `alumni` 中的每位学生都可以填写可选的 `awards` 列表，每项荣誉占一行。已有的单项 `award` 字段也能显示。
+所有在读学生放在同一个 `members:` 列表下。填写 `role` 为 `PhD Student`、`MS Student` 或 `Undergraduate Student`，页面会自动放入相应区块。有学生的区块才会显示，其他身份归入 Other Members。
+
+`members` 和 `alumni` 中的每位学生都可以填写可选的 `awards` 列表，每项荣誉占一行。已有的单项 `award` 字段也能显示。
 
 Alumni 可以额外添加当前去向：
 

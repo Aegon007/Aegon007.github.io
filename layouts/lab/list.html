@@ -108,9 +108,28 @@
             <span>Team</span>
             <h2>Current Members</h2>
         </div>
-        <div class="lab-person-grid">
-            {{ range .Site.Data.lab.members }}
-            {{ partial "lab_person.html" . }}
+        {{ $members := .Site.Data.lab.members }}
+        {{ $groups := slice
+            (dict "title" "PhD Students" "roles" (slice "PhD Student" "Ph.D. Student" "PhD Candidate" "Ph.D. Candidate"))
+            (dict "title" "Master's Students" "roles" (slice "MS Student" "Master's Student" "Masters Student"))
+            (dict "title" "Undergraduate Students" "roles" (slice "Undergraduate Student"))
+        }}
+        {{ $knownRoles := slice }}
+        {{ range $groups }}{{ $knownRoles = union $knownRoles .roles }}{{ end }}
+        {{ $groups = $groups | append (dict "title" "Other Members" "roles" $knownRoles "operator" "not in") }}
+        <div class="lab-person-groups">
+            {{ range $groups }}
+            {{ $title := .title }}
+            {{ with where $members "role" (.operator | default "in") .roles }}
+            <section class="lab-person-group">
+                <h3>{{ $title }}</h3>
+                <div class="lab-person-grid">
+                    {{ range . }}
+                    {{ partial "lab_person.html" (dict "person" . "grouped" true) }}
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
             {{ end }}
         </div>
     </section>
@@ -123,7 +142,7 @@
         </div>
         <div class="lab-person-grid">
             {{ range .Site.Data.lab.alumni }}
-            {{ partial "lab_person.html" . }}
+            {{ partial "lab_person.html" (dict "person" .) }}
             {{ end }}
         </div>
     </section>

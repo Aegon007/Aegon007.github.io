@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6{
 .lab-pi-copy h3,
 .lab-text-card h3,
 .lab-project h3,
-.lab-person h3 {
+.lab-person-name {
     color: #2f343a;
     font-size: 1.35rem;
     line-height: 1.25;
@@ -269,6 +269,21 @@ h1,h2,h3,h4,h5,h6{
     color: #4f5963;
     line-height: 1.58;
 }
+.lab-person-groups {
+    display: grid;
+    gap: 28px;
+    min-width: 0;
+}
+.lab-person-group + .lab-person-group {
+    padding-top: 24px;
+    border-top: 1px solid #e4eaee;
+}
+.lab-person-group > h3 {
+    margin-bottom: 14px;
+    color: #18766d;
+    font-size: 1rem;
+    font-weight: 700;
+}
 .lab-person-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -294,8 +309,8 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 10px;
     border-top: 1px solid #e4eaee;
 }
-.lab-person-honors h4 {
-    margin-bottom: 4px;
+.lab-person .lab-person-honors-label {
+    margin: 0 0 4px;
     color: #18766d;
     font-size: 0.82rem;
     font-weight: 700;
